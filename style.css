@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    background-color: #caecff;
+}
+
+.content{
+    display: flex;
+    /* height: 35vh; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25aee0;
+}
+.header img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    filter: hue-rotate(150deg);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.514); */
+}
+.header h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.input{
+    width: 30rem;
+    height: 2.5rem;
+    transition: 0.3s;
+    margin-top: 5rem;
+}
+.input input{
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 10px rgb(92, 92, 92);
+}
+.input input::placeholder{
+    color: black;
+    font-weight: 500;
+}
+.btn{
+    width: 19%;
+    height: 100%;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    background-color: rgb(255, 88, 88);
+    box-shadow: 0 0 10px rgb(92, 92, 92);
+    border: 1px solid rgb(170, 170, 170);
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(255, 88, 88);
+}
+.btn:active{
+    color: #fff;
+    background-color: rgb(201, 201, 201);
+    color: rgb(255, 19, 19);
+}
+
+.result{
+    width: 30rem;
+    height: 54vh;
+    color: black;
+    display: flex;
+    transition: 0.3s;
+    min-height: 340px;
+    margin-top: 4.5rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgb(92, 92, 92);
+}
+#temp{
+    display: inline;
+}
+.result img {
+    width: 12rem;
+}
+
+/* responsive mode... */
+@media (max-width: 515px){
+    .input{
+        width: 20rem;
+        margin-top: 4rem;
+    }
+    .btn{
+        width: 18%;
+        font-size: 1rem;
+    }
+    .result{
+        width: 20rem;
+    }
+}
+@media (max-width: 360px){
+    .input,
+    .result{
+        width: 15rem;
+    }
+    .result{
+        margin-top: 6rem;
+    }
+    .btn{
+        width: 100%;
+        margin: auto;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    .input input{
+        width: 100%;
+    }
+    .header img{
+        width: 40px;
+    }
+    .header h1{
+        font-size: 1.5rem;
+    }
+}
